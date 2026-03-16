@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/d6404d7b58.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Programmer</p>
+                <h1>Hi, I'm <span>Harsh Kumar</span><br>From Patna, Bihar</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------about------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/harsh1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated Cybersecurity professional with 1.5 years of Courses as a
+                        Security Operations Center (SOC) Analyst, specializing in monitoring, detecting,
+                        and responding to security incidents across enterprise environments. I have
+                        hands-on Courses in security monitoring, log analysis, threat detection,
+                        and incident response using SIEM tools and security platforms.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('courses')">Courses</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience (internship)')">Internship Experience</p>
+                        <p class="tab-links" onclick="opentab('experience (work)')">Work Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, C</li>
+                            <li><span>Web Technologies</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Others</span><br>Artificial Intelligence, Machine Learning, Data Structures</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="courses">
+                        <ul>
+                            <li><span>Jun 2022 - Aug 2022</span><br>Programming
+                                with Python from Internshala Trainings,
+                                Online<br>Successfully completed a 6 weeks
+                                online certified training on
+                                Programming with Python. The training
+                                consisted of
+                                Introduction to Python, Using Variables in
+                                Python, Basics of
+                                Programming in Python, Principles of
+                                Object-oriented
+                                Programming OOP), Connecting to SQLite
+                                Database,
+                                Developing a GUI with PyQT, Application of
+                                Python in Various
+                                Disciplines, and The Final Project modules.
+                                I scored 100% in
+                                the final assessment and was a top performer
+                                in the training.
+                            </li>
+                            <li><span>Aug 2021 - Aug 2021</span><br>Github
+                                Tutorial For Beginners from Great Learning,
+                                Online</li>
+                            <li><span>Jun 2021 - Jul 2021</span><br>Python
+                                Programming For Beginners from Udemy, Online</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>B.Tech, Computer
+                                Science & Engineering at Techno
+                                International Batanagar</li>
+                            <li><span>2018 - 2020</span><br>Senior Secondary
+                                (XII), Science at Amirchand Balika Uchh
+                                Vidyalaya (BBOSE Board)<br>with Percentage:
+                                63.00%</li>
+                            <li><span>2007 - 2017</span><br>Secondary (X) at
+                                St, Paul's High School (CBSE Board)<br>with
+                                CGPA: 8.00/10</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience (internship)">
+                        <ul>
+                            <li><span>Dec 2022 - Mar 2023</span><br><b>Deloitte</b></li>
+                        </ul>
+                            <li>Participated in technology consulting and advisory projects.</li>
+                            <li>Developed skills in project management and client communication.</li>
+                        <ul>
+                            <li><span>Mar 2023 - Apr 2023</span><br><b>Tata Consultancy Services ESG</b><br></li>
+                        </ul>
+                            <li>Gained practical experience in environmental, social, and governance (ESG) practices.</li>
+                        <ul>
+                            <li><span>Jun 2023  Jul 2023</span><br><b>IBM SkillsBuild With Collaboration
+                                With AICTE And Edunet Foundation</b></li>
+                        </ul>
+                            <li>Developed and optimized front-end features using HTML, CSS, and JavaScript.</li>
+                            <li>Collaborated with a team to improve user interface and user experience designs.</li>
+                    </div>
+                    <div class="tab-contents" id="experience (work)">
+                        <ul>
+                            <li><span>Nov 2024 - Present</span><br><b>Airtel</b></li>
+                            <li><i>SOC Analyst</i></li>
+                        </ul>
+                            <li>Monitored, analyzed, and responded to over 1000 security events monthly from various sources within the
+organization, achieving a 99% incident identification rate</li>
+                            <li>Reviewed and enhanced SOC processes, leading to a 30% quicker mitigation of potential threats and
+vulnerabilities.</li>
+                            <li>Participated in 50+ incident response activities, ensuring timely containment and recovery, limiting the
+impact to business operations.</li>
+                            <li>Collaborated with a cross-functional team of 15 professionals, ensuring security tools were properly
+configured and reduced false-positive alerts by 40%.</li>
+                            <li>Provided regular and ad hoc reporting to upper management, reducing the time spent on incident review
+meetings by 20%.</li>
+                            <li>Linux and Windows Log Source Integration.</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------services------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web designers use their creative and software<br>
+                        engineering/programming skills to design, build and<br>
+                        improve websites. They understand user Courses<br>
+                        and are able to build websites that are easy to<br>
+                        understand, navigate, and use, and adhere to design<br>
+                        standards and specifications. They are sometimes<br>
+                        known as a front-end developer.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Coding and debugging.<br>
+                        Designing and testing computer structures.<br>
+                        Troubleshooting system errors.<br>
+                        Writing computer instructions.<br>
+                        Managing database systems.<br>
+                        Maintaining operating systems.<br>
+                        Editing source-code.<br>
+                        Profiling and analyzing algorithms.<br>
+                        Implementing build systems.<br>
+                        Providing tech support.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Programmer</h2>
+                    <p>Coding and debugging.<br>
+                        Designing and testing computer structures.<br>
+                        Troubleshooting system errors.<br>
+                        Writing computer instructions.<br>
+                        Managing database systems.<br>
+                        Maintaining operating systems.<br>
+                        Editing source-code.<br>
+                        Profiling and analyzing algorithms.<br>
+                        Implementing build systems.<br>
+                        Providing tech support.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Internship Certificate</h1>
+            <div class="course-list">
+                <div class="course">
+                    <img src="img/Deloitte.png">
+                    <div class="layer">
+                        <h3>Deloitte Internship</h3>
+                        <p>Participated in technology consulting and advisory projects.</p>
+                        <p>Developed skills in project management and client communication.</p>
+                        <a href="#"><i class="fa-solid
+                                    fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="img/TCS.png">
+                    <div class="layer">
+                        <h3>TCS Internship</h3>
+                        <p>Gained practical experience in environmental, social, and governance (ESG) practices.</p>
+                        <a href="#"><i class="fa-solid
+                                    fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="img/IBM.png">
+                    <div class="layer">
+                        <h3>IBM Internship</h3>
+                        <p>Developed and optimized front-end features using HTML, CSS, and JavaScript.</p>
+                        <p>Collaborated with a team to improve user interface and user experience designs.</p>
+                        <a href="#"><i class="fa-solid
+                                    fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- -----------------portfolio---------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Courses</h1>
+            <div class="course-list">
+                <div class="course">
+                    <img src="img/certificate-1.jpeg">
+                    <div class="layer">
+                        <h3>Basics of Python</h3>
+                        <p>Course Completion Certificate of Basics of Python
+                            from Infosys.</p>
+                        <a href="#"><i class="fa-solid
+                                    fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="img/certificate-2.jpeg">
+                    <div class="layer">
+                        <h3>Certificate of Training</h3>
+                        <p>The training consisted of Introduction to Python,
+                            Using Variables in Python, Basics of Programming
+                            in
+                            Python, Principles of Object-oriented
+                            Programming (OOP), Connecting to SQLite
+                            Database, Developing a GUI
+                            with PyQT, Application of Python in Various
+                            Disciplines, and The Final Project modules.</p>
+                        <a href="#"><i class="fa-solid
+                                    fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="course">
+                    <img src="img/certificate-3.jpeg">
+                    <div class="layer">
+                        <h3>Python & Machine Learning Essentials Bootcamp</h3>
+                        <p>5 Days Bootcamp of Python & Machine Learning
+                            Essentials Bootcamp from LetsUpgrade</p>
+                        <a href="#"><i class="fa-solid
+                                    fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------------------contact------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>
+                        singhharsh1507@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8521877658</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/harsh__singhh/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100007663363995" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=918521877658&text&type=phone_number&app_absent=0"
+                            target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/harsh-kumar-1248b321b/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/harshsinghhh" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="resume/Harsh Kumar_CV.pdf" download class="btn
+                            btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="phone" name="Phone" placeholder="Your Phone No." required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Harsh. Made for <i class="fa-solid fa-heart"></i>
+                Personal Portfolio</p>
+        </div>
+    </div>
+
+    <!-- <script src="portfolio.js"></script> -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzVKGNtxIO4l0zy7cdDWVdVcca-a4s8sGsYlR3BIcWG6CptF8YVJfSs4su63mLCA4sn/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
